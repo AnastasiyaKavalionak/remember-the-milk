@@ -1,0 +1,16 @@
+{
+  "name": "remember-the-milk",
+  "version": "1.0.0",
+  "author": "Anastasiya Kavalionak",
+  "license": "ISC",
+  "scripts": {
+    "update": "webdriver-manager update",
+    "e2e": "protractor protractor.config.js"
+  },
+  "devDependencies": {
+    "helper": "git+https://github.com/AnastasiyaKavalionak/helper.git",
+    "log4js": "^2.5.3",
+    "protractor": "^5.2.0",
+    "shelljs": "^0.7.8"
+  }
+}
