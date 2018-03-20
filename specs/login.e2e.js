@@ -12,8 +12,8 @@ describe('checking login page ', () => {
     logger.info('checking login page ');
     it('checking log in ', () => {
         logger.info('checking log in');
-        helper.setTextInputValue('TestLogin5', login.username);
-        helper.setTextInputValue('Test12345', login.password);
+        helper.setTextInputValue(login.username,'TestLogin5');
+        helper.setTextInputValue(login.password, 'Test12345');
         helper.scrollAndWaitAndClickAndWaitTitleIs(login.login, false,'All Tasks - Remember The Milk');
     });
 

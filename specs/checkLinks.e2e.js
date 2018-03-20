@@ -16,14 +16,14 @@ describe('checking links ', () => {
     for (let link in list.footer) {
         it(`${link} from footer`, () => {
             logger.info(`${link} from footer`);
-            helper.scrollAndWaitAndClickAndCheckTitle(master.footer[link], true, list.footer[link]);
+            helper.scrollAndWaitAndClickAndWaitTitleIs(master.footer[link], true, list.footer[link]);
         });
     }
 
     for (let link in list.header) {
         it(`${link} from header`, () => {
             logger.info(`${link} from footer`);
-            helper.scrollAndWaitAndClickAndCheckTitle(master.header[link], false, list.header[link]);
+            helper.scrollAndWaitAndClickAndWaitTitleIs(master.header[link], false, list.header[link]);
         });
     }
 

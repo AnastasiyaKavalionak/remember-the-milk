@@ -8,9 +8,20 @@
     "e2e": "protractor protractor.config.js"
   },
   "devDependencies": {
+    "esdoc": "^1.0.4",
+    "esdoc-standard-plugin": "^1.0.0",
     "helper": "git+https://github.com/AnastasiyaKavalionak/helper.git",
     "log4js": "^2.5.3",
     "protractor": "^5.2.0",
     "shelljs": "^0.7.8"
+  },
+  "esdoc": {
+    "source": "./output",
+    "destination": "./docs",
+    "plugins": [
+      {
+        "name": "esdoc-standard-plugin"
+      }
+    ]
   }
 }
